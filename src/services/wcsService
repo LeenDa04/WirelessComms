@@ -1,0 +1,6 @@
+import api from "./api";
+
+export async function getWCSExplanation(input) {
+  const res = await api.post("/wcs", input);
+  return res.data;
+}
